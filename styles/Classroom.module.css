@@ -1,0 +1,104 @@
+.backgroundImg, .backgroundImg2 {
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+.backgroundImg {
+  background-image: url("/images/classroom.png");
+}
+.backgroundImg2 {
+  background-image: url("/images/spareTime/Spare-Top.png")
+}
+
+
+.backgroundImg::before, .backgroundImg2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 75vh;
+  }
+  .content {
+    position: relative;
+    color: white;
+    text-align: right;
+    padding-right: 20%;
+    padding-top: 30vh;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .info {
+    background-color: white;
+    color: black;
+    padding: 10% 5%;
+  }
+  .infoDiv {
+    padding-top: 10px;
+  }
+  .vidDiv {
+    text-align: center;
+    margin: auto;
+  }
+  .videoMax {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
+    
+  }
+  .classroomDetails {
+    min-height: 120vh;
+    background-color: black;
+    padding:10%;
+    position: relative;
+  }
+  .classroom__title {
+    color: white;
+    padding-top: 30px;
+  }
+  .classroom__content {
+    color: rgb(167, 167, 167);
+  }
+  .imageMax {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  .center {
+    margin: auto;
+  }
+  .topPad {
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+
+  
+  @media (max-width: 1103px) {
+    .videoMax {
+      padding-left: 5%;
+    padding-right: 5%;
+    }
+
+  }
+  @media (max-width: 767px) {
+    .info {
+      padding: 5% 2%;
+    }
+    .videoMax {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+
+  }
+  @media (max-width: 530px) {
+   .content {
+     padding-right: 10%;
+     padding-top: 20vh;
+   }
+
+  }

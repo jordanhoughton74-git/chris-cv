@@ -1,0 +1,167 @@
+.backgroundImg,
+.backgroundImg2,
+.backgroundImg3,
+.backgroundImg4,
+.backgroundImg5 {
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.backgroundImg {
+  background-image: url("/images/howard-home.png");
+}
+
+.backgroundImg2 {
+  background-image: url("/images/avalon-home.png");
+}
+
+.backgroundImg3 {
+  background-image: url("/images/herald-home.png");
+}
+
+.backgroundImg4 {
+  background-image: url("/images/world-home.png");
+}
+
+.backgroundImg5 {
+  background-image: url("/images/sahmyook-home.png");
+}
+
+
+.backgroundImg::before,
+.backgroundImg2::before,
+.backgroundImg3::before,
+.backgroundImg4::before,
+.backgroundImg5::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 75vh;
+}
+
+.content {
+  position: relative;
+  color: white;
+  text-align: right;
+  padding-right: 20%;
+  padding-top: 30vh;
+}
+
+.infoDiv {
+  padding: 5%;
+}
+
+.infoDivLong {
+  padding: 0 5% 5%;
+}
+
+.infoText,
+.padLeft,
+.infoTextSahmyook {
+  color: rgb(62, 62, 62);
+}
+
+.infoTextSahmyook {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.galleryDiv {
+  padding: 0 20%;
+}
+
+.padLeft,
+.padRight {
+  margin: auto;
+}
+
+.videoText {
+  padding-top: 5%;
+}
+
+.imageMax {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.videoMax {
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+.centerImg {
+  margin: auto;
+  text-align: center;
+}
+
+.verticalAlign,
+.verticalAlignLeft {
+  margin: auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.imageSize {
+  max-width: 75%;
+  box-shadow:
+    0 3px 2.2px rgba(0, 0, 0, 0.029),
+    0 9.2px 5.3px rgba(0, 0, 0, 0.037),
+    0 18.6px 10px rgba(0, 0, 0, 0.042),
+    0 32.3px 17.9px rgba(0, 0, 0, 0.047),
+    0 53.1px 33.4px rgba(0, 0, 0, 0.053),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+@media (min-width: 768px) {
+  .imageMax {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+@media (max-width: 768px) {
+ 
+  .infoText {
+    padding-top: 5%;
+  }
+  .centerImg, .infoDivLong {
+    padding-bottom: 10%;
+  }
+  .verticalAlign {
+    padding-bottom: 10%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .padLeft {
+    padding-left: 20%;
+  }
+
+  .padRight {
+    padding-right: 20%;
+  }
+
+  .verticalAlign {
+    padding-right: 10%;
+  }
+
+  .verticalAlignLeft {
+    padding-left: 10%;
+  }
+
+}
+
+@media (max-width: 500px){
+  .infoText {
+    padding-top: 10%;
+  }
+}

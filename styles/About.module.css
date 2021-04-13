@@ -1,0 +1,63 @@
+.backgroundImg {
+    height: 75vh;
+    background-image: url("/images/About-top.png");  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+.backgroundImg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 75vh;
+  }
+  .content {
+    position: relative;
+    color: white;
+    text-align: right;
+    padding-right: 20%;
+    padding-top: 35vh;
+  }
+  .infoDiv {
+      background-color: black;
+      color: white;
+      padding: 5% 0;
+      position: relative;
+  }
+  .timeline {
+      border-left: 5px solid;
+      border-color: white;
+  }
+  .container {
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+  .padding {
+      padding-left: 50px;
+  }
+  .removePad{
+      margin:0
+  }
+  .dot{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top: 2px;
+    padding-left: 3px;
+    background-color: white;
+    position: absolute;
+    left: -3px
+  }
+  .work .dot:hover {
+    cursor: pointer;
+  }
+  @media (max-width: 767px) {
+    .topPad {
+      padding-top: 5%;
+    }
+  }
