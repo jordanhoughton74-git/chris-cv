@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
         <div id="outer-container">
-          <Header />
+          <Header/>
           <HeaderMobile />
         <div id="page-wrap">
           <Component {...pageProps} />
